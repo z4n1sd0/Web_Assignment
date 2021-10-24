@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoBay - Contact</title>
+    <!-- https://fonts.google.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <!-- boottrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="css/WP_assignment.css" rel="stylesheet" />
+    <!-- js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/WP_assignment_script.js"></script>
+</head>
+
+<body>
+    <div class="tm-container">
+        <div>
+            <div class="tm-row pt-4">
+                <div class="tm-col-left">
+                    <div class="tm-site-header media">
+                        <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i>
+                        <div class="media-body">
+                            <h1 class="tm-sitename text-uppercase">gobay</h1>
+                            <p class="tm-slogon">Let's go!</p>
+                        </div>        
+                    </div>
+                </div>
+                <div class="tm-col-right">
+                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
+                            data-toggle="collapse" data-target="#navbar-nav" 
+                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                            <ul class="navbar-nav text-uppercase">
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="gobay.html">GoBay Project</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="about.html">About Me</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link tm-nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="solution.html">Solution</a>
+                                </li>
+                            </ul>                            
+                        </div>                        
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="tm-row">
+                <div class="tm-col-left"></div>
+                <main class="tm-col-right tm-contact-main"> <!-- Content -->
+                    <section class="tm-content tm-contact">
+                        <h2 class="mb-4 tm-content-title">Contact Us</h2>
+                        <hr class="mb-4">
+                        <p class="mb-85">We are waiting for you, your questions help us to become better. Don't forget to check our FAQs.</p>
+                            <!-- form -->
+                            <div class="form-group mb-4">
+                                <input type="text" id="fullname" class="form-control" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="email" id="email" class="form-control" placeholder="Your Email (gmail)"/>
+                            </div>
+                            <select id="location" class="select-control">
+                                <option value="" disabled selected>Your Location...</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+
+                            <div class="form-group mb-5">
+                                <textarea rows="6" id="message" class="form-control" placeholder="Your Message..."></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-big btn-primary" onclick="popup();">Send It</button>
+                                <button class="btn btn-big btn-primary" onclick="clearForm();">Cancel</button>
+                            </div>
+                        
+                    </section>
+                </main>
+            </div>
+        </div>        
+
+        <div class="tm-row">
+            <div class="tm-col-left text-center">            
+                <ul class="tm-bg-controls-wrapper">
+                    <li class="tm-bg-control active" data-id="0"></li>
+                    <li class="tm-bg-control" data-id="1"></li>
+                    <li class="tm-bg-control" data-id="2"></li>
+                </ul>            
+            </div>        
+        </div>
+
+        <div class="tm-bg"> <!-- background design -->
+            <div class="tm-bg-left"></div>
+            <div class="tm-bg-right"></div>
+        </div>
+    </div>
+
+</body>
+</html>
